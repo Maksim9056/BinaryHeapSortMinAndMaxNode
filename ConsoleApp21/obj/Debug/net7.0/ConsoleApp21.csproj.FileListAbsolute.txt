@@ -1,0 +1,14 @@
+C:\Users\Максим\source\repos\ConsoleApp21\ConsoleApp21\bin\Debug\net7.0\ConsoleApp21.exe
+C:\Users\Максим\source\repos\ConsoleApp21\ConsoleApp21\bin\Debug\net7.0\ConsoleApp21.deps.json
+C:\Users\Максим\source\repos\ConsoleApp21\ConsoleApp21\bin\Debug\net7.0\ConsoleApp21.runtimeconfig.json
+C:\Users\Максим\source\repos\ConsoleApp21\ConsoleApp21\bin\Debug\net7.0\ConsoleApp21.dll
+C:\Users\Максим\source\repos\ConsoleApp21\ConsoleApp21\bin\Debug\net7.0\ConsoleApp21.pdb
+C:\Users\Максим\source\repos\ConsoleApp21\ConsoleApp21\obj\Debug\net7.0\ConsoleApp21.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Максим\source\repos\ConsoleApp21\ConsoleApp21\obj\Debug\net7.0\ConsoleApp21.AssemblyInfoInputs.cache
+C:\Users\Максим\source\repos\ConsoleApp21\ConsoleApp21\obj\Debug\net7.0\ConsoleApp21.AssemblyInfo.cs
+C:\Users\Максим\source\repos\ConsoleApp21\ConsoleApp21\obj\Debug\net7.0\ConsoleApp21.csproj.CoreCompileInputs.cache
+C:\Users\Максим\source\repos\ConsoleApp21\ConsoleApp21\obj\Debug\net7.0\ConsoleApp21.dll
+C:\Users\Максим\source\repos\ConsoleApp21\ConsoleApp21\obj\Debug\net7.0\refint\ConsoleApp21.dll
+C:\Users\Максим\source\repos\ConsoleApp21\ConsoleApp21\obj\Debug\net7.0\ConsoleApp21.pdb
+C:\Users\Максим\source\repos\ConsoleApp21\ConsoleApp21\obj\Debug\net7.0\ConsoleApp21.genruntimeconfig.cache
+C:\Users\Максим\source\repos\ConsoleApp21\ConsoleApp21\obj\Debug\net7.0\ref\ConsoleApp21.dll
