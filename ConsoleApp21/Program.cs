@@ -7,6 +7,7 @@
     {
         public List<T> _heap;
 
+
         public BinaryHeap()
         {
             _heap = new List<T>();
@@ -157,6 +158,87 @@
             _heap[j] = temp;
         }
 
+        public void PrintBinaryTree()
+        {
+            int height = (int)Math.Ceiling(Math.Log(_heap.Count, 2));
+            int maxWidth = (int)Math.Pow(2, height) - 1;
+
+            for (int i = 0; i < height; i++)
+            {
+                int level = (int)Math.Pow(2, i);
+                int start = level - 1;
+                int end = start + level;
+
+                int space = maxWidth / (level + 1);
+                Console.WriteLine();
+
+                for (int j = start; j < end; j++)
+                {
+                    if (j >= _heap.Count)
+                    {
+                        break;
+                    }
+
+                    Console.Write(new string(' ', space));
+                    Console.Write($"{_heap[j]}");
+                    Console.Write(new string(' ', space));
+                }
+
+                maxWidth /= 2;
+            }
+
+            Console.WriteLine();
+        }
+
+        //public void Print()
+        //{
+        //    int count = _heap.Count;
+        //    for (int i = 0; i < count; i++)
+        //    {
+        //        for (int j = 0; j <Math.Pow(2, i) && j + Math.Pow(2, i) < count + 1; j++)
+        //        {
+        //            Console.Write(_heap[(int)(j + Math.Pow(2, i) - 1)] + " ");
+        //        }
+        //        Console.WriteLine();
+        //    }
+        //}
+
+        //public void Print()
+        //{
+        //    int count = _heap.Count;
+        //    for (int i = count - 1; i >= 0; i--)
+        //    {
+        //        for (int j = 0; j < Math.Pow(2, i) && j + Math.Pow(2, i) < count + 1; j++)
+        //        {
+        //            Console.Write(_heap[(int)(j + Math.Pow(2, i) - 1)] + " ");
+        //        }
+        //        Console.WriteLine();
+        //    }
+        //}
+        public void Print()
+        {
+            int count = _heap.Count;
+            for (int i = count - 1; i >= 0; i--)
+            {
+                for (int j = 0; j < Math.Pow(2, i) && j + Math.Pow(2, i) < count + 1; j++)
+                {
+                    Console.Write(_heap[(int)(j + Math.Pow(2, i) - 1)] + " ");
+
+                    int parentIndex = (int)(j + Math.Pow(2, i) - 1) / 2;
+                    if ((int)(j + Math.Pow(2, i) - 1) % 2 == 0)
+                    {
+                        Console.Write("/");
+                    }
+                    else if (parentIndex * 2 + 2 < _heap.Count)
+                    {
+                        Console.Write("\\");
+                    }
+                }
+                Console.WriteLine();
+                Console.WriteLine();
+            }
+        }
+
 
     }
 
@@ -185,7 +267,8 @@
                 Console.WriteLine("Сортировка Убыванию :" + i);
             }
             heap = new BinaryHeap<int>(mins);
-
+            Console.WriteLine("Вывод ");
+            heap.Print();
             Console.WriteLine("Добавили BinaryHeap Убыванию сортировки:");
 
             foreach (int i in heap._heap)
@@ -211,6 +294,12 @@
                 Console.WriteLine("BinaryHeap  Max Heap:" + i);
 
             }
+
+            heap.PrintBinaryTree();
+
+
+            Console.WriteLine("Вывод ");
+            heap. Print();
             Console.ReadLine();
         }
     }
